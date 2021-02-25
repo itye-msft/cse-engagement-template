@@ -15,6 +15,11 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: DockerCompose@0
+    displayName: Build, Test, E2E
+    inputs:
+        action: Run services
+        dockerComposeFile: docker-compose.yml
 - script: dotnet restore src
 - script: dotnet build --configuration $(buildConfiguration) src
   displayName: 'dotnet build $(buildConfiguration)'
