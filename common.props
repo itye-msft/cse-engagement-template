@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup Condition=" '$(MSBuildProjectExtension)' == '.csproj' ">
+        <PackageReference Include="Ensure.That" Version="9.2.0" />
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup Condition="Exists('$(MSBuildThisFileDirectory)../.editorconfig')" >
+        <AdditionalFiles Include="$(MSBuildThisFileDirectory)../.editorconfig" />
+    </ItemGroup>
+    <ItemGroup Condition="Exists('$(MSBuildThisFileDirectory)../../.editorconfig')" >
+        <AdditionalFiles Include="$(MSBuildThisFileDirectory)../../.editorconfig" />
+    </ItemGroup>
+
+</Project>

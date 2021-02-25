@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleNetApi", "SampleApp\SampleNetApi.csproj", "{EF837D26-EA2F-44E1-8F24-B724EE12A9D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleNetApi.UnitTests", "test\SampleNetApi.UnitTests\SampleNetApi.UnitTests.csproj", "{5C449E68-9962-4D19-A4FB-8452D6BCC64F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF837D26-EA2F-44E1-8F24-B724EE12A9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF837D26-EA2F-44E1-8F24-B724EE12A9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF837D26-EA2F-44E1-8F24-B724EE12A9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF837D26-EA2F-44E1-8F24-B724EE12A9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C449E68-9962-4D19-A4FB-8452D6BCC64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C449E68-9962-4D19-A4FB-8452D6BCC64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C449E68-9962-4D19-A4FB-8452D6BCC64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C449E68-9962-4D19-A4FB-8452D6BCC64F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

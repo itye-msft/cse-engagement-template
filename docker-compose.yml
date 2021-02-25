@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    image: app:0.01
+    build:
+      context: .
+    ports:
+      - "8080:80"
+  e2e:
+    image: e2e:0.01
+    build:
+      context: ./e2e
