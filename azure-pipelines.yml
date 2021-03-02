@@ -20,6 +20,6 @@ steps:
   inputs:
     action: Run services
     dockerComposeFile: docker-compose.yml
-- script: dotnet restore src
-- script: dotnet build --configuration $(buildConfiguration) src
+- script: dotnet restore SampleApp
+- script: dotnet build --configuration $(buildConfiguration) SampleApp
   displayName: 'dotnet build $(buildConfiguration)'
