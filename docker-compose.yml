@@ -9,4 +9,4 @@ services:
   e2e:
     image: e2e:0.01
     build:
-      context: ./e2e
+      context: ./E2E
